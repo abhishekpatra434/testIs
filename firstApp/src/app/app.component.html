@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1 [ngStyle]="{'color': getcolor()}">File Upload</h1>
+
+<button type= "button" (click)="onUpload()">Upload</button>
+
+hello
+<ul *ngFor="let group of ClientList">
+    <li>{{group.ClientId}}    ---  {{group.ClientName}} ----- {{group.PoliceStation}}</li>     
+<ul>
+    <li *ngFor= "let bmi of group.ClientBmiList">
+    {{bmi.bmiId}}   -----  {{bmi.weight}} ----- {{bmi.weight_unit}}   ----- {{bmi.height}}  
+    </li>
+</ul>
+
+</ul>
+
+<input type= "text" [value] = 'name'>
+
+<router-outlet></router-outlet>
